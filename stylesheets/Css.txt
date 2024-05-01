@@ -1,0 +1,1 @@
+Inside this folder are all the CSS indexes for the web.
