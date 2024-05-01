@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asistente/stylesheets/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <title>SkyBlue</title>
+</head>
+<body>
+    <a href="../asistente/menu.html" class="back-button">Volver</a>
+    <h1>Hacer Cobro</h1>
+    <div class="overlay">
+        <h1>Hacer Cobro</h1>
+        <div class="form-container">
+            <div class="input-group">
+                <select name="" id="pedidos-select" required>
+                    <option value="">Seleccione el pedido</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="cantidad-cobro" placeholder="Cantidad a Cobrar">
+                <div class="text-right">
+                    <span>Deuda:</span>
+                    <span id="deuda">$0</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="pago-con" placeholder="Pago Con">
+                <div class="text-right">
+                    <span>Cambio:</span>
+                    <span id="cambio">$0</span>
+                </div>
+            </div>
+
+            <div class="input-group actions">
+                <button onclick="realizarCobro()">Cobrar</button>
+                <div class="text-right">
+                    <span>Deuda Actual:</span>
+                    <span id="deuda-actual">$0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../asistente/scripts/make.js"></script>
+    <script src="../asistente/scripts/payment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asistente/stylesheets/make.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <title>SkyBlue</title>
+</head>
+<body>
+    <a href="../asistente/menu.html" class="back-button">Volver</a>
+    <div class="overlay">
+        <div class="form-container">
+            <h1>Hacer Pedido</h1>
+            <form id="pedido-form">
+                <input type="text" id="nombre-cliente" placeholder="Nombre" required>
+                <div class="input-group">
+                    <select id="tipo-postre" required>
+                        <option value="">Seleccione el tipo de Postre</option>
+                    </select>
+                    <div class="cantidad-container">
+                        <button type="button" onclick="ajustarCantidad(false, this)">-</button>
+                        <input type="number" value="1" min="1" class="cantidad-postre">
+                        <button type="button" onclick="ajustarCantidad(true, this)">+</button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <input type="number" placeholder="Anticipo" class="anticipo">
+                    <span class="a-pagar">Total:</span>
+                </div>
+
+                <button id="hacer-pedido" type="submit">Hacer Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../asistente/scripts/make.js"></script>
+</body>
+</html>
