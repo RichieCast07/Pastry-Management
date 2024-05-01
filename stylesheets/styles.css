@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(/img/Back1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.login-content {
+    margin: 0;
+    margin-top: 80px;
+    max-width: 400px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .login-content {
+        margin-right: 60%;
+    }
+}
+
+.login-form {
+    background-color: #76e9f1;
+    padding: 20px;
+    border-radius: 7%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 50vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form select,
+.login-form button {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    background-color: rgba(255, 255, 255, 0.815);
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #58daf1;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-content {
+        margin: 0 10px;
+    }
+}
