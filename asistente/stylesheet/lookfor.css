@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ccc;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('/img/Back1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 75vh;
+}
+
+#buscar-form {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+#buscar-form input {
+    width: 100%;
+    padding-left: 15px;
+    border: solid 2px #999;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#buscar-form button {
+    width: 45px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid 2px #999;
+    border-left: none;
+    background-color: #fff;
+    padding: 5PX;
+}
+#buscar-form button svg {
+    height: 100%;
+}
+#buscar-form button:hover {
+    filter: brightness(0.8);
+}
+
+
+
+.pedido-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pedido-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pedido-imagen {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.pedido-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pedido-nombre, .pedido-total {
+    margin-bottom: 4px;
+}
+.pedido-precio {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+
+.back-button, .back-button a {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    background-color: #76e9f1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1050;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.back-button:hover, .back-button a:hover {
+    background-color: #58daf1;
+}
