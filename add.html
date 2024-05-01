@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/add.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>SkyBlue</title>
+</head>
+<body>
+    <a href="/dashboard-admin.html" class="back-button">Volver</a>
+    <h1>Añadir Postre</h1>
+    <div class="overlay">
+        <div class="form-container">
+            <div class="image-container">
+                <div class="image-upload-container" id="image-upload-container" onclick="document.getElementById('hidden-image-input').click();">
+                    <div id="upload-text">
+                        <i class="fa-regular fa-image"></i><br><br>Inserte una Imagen Aquí
+                    </div>
+                    <input type="file" id="hidden-image-input" accept="image/*" style="display: none;" onchange="cargarImagen(event);">
+                    <div id="imagen-postre" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="content-postre">
+                <form id="add-postre-form">
+                    <div class="input-container">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-id">
+                            <label for="id">Id:</label>
+                            <input type="text" id="id" required>
+                        </div>
+                        <div class="input-price">
+                            <label for="precio">Precio:</label>
+                            <input type="text" id="precio" placeholder="$" required>
+                        </div>
+                    </div>
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/scripts/add.js"></script>
+</body>
+</html>
